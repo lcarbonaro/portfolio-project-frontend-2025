@@ -21,10 +21,10 @@ function About() {
 
     return (
 
-        <main class="main-portfolio-page" >
+        <main >
 
-            <section class="about" id="about">
-                <h2 class="text-wrapper-7">About</h2>
+            <section id="about">
+                <h2 >About</h2>
 
                 {aboutContent}
 

@@ -22,32 +22,32 @@ function Projects() {
 
   return (
 
-    <main class="main-portfolio-page" >
+    <main  >
 
-      <section class="projects" id="projects">
-        <h2 class="text-wrapper-7">Projects</h2>
+      <section>
+        <h2 >Projects</h2>
 
         {
           projects.map((p) => {
             return (
 
-              <article class="project-item" key={p._id}>
+              <article key={p._id}>
 
-                <div class="fill-my-cup-of-faith-wrapper">
-                  <div class="fill-my-cup-of-faith">
-                    <h3 class="span">{p.title}</h3>
-                    <p class="text-wrapper-6">
+                <div >
+                  <div >
+                    <h3 >{p.title}</h3>
+                    <p >
                       <br />{p.description}<br /><br />
                     </p>
                     <p>
-                      <span class="span">Skills: </span>
-                      <span class="text-wrapper-6">
+                      <span >Skills: </span>
+                      <span >
                         {p.skills.join(', ')}
                       </span>
                     </p>
                     <br />
-                    <a href={p.link} class="project-link" target="_blank">
-                      <span class="span">View Project</span>
+                    <a href={p.link}  target="_blank">
+                      <span >View Project</span>
                     </a>
                   </div>
                 </div>
