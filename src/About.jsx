@@ -26,7 +26,9 @@ function About() {
             <section id="about">
                 <h2 >About</h2>
 
-                {aboutContent}
+                <img src="./images/mypic.png" alt="my pic" />
+
+                <p>{aboutContent}</p>
 
             </section>
 
