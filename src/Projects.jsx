@@ -22,40 +22,43 @@ function Projects() {
 
   return (
 
-    <section class="projects" id="projects">
-      <h2 class="text-wrapper-7">Projects</h2>
+    <main class="main-portfolio-page" >
 
-      {
-        projects.map((p) => {
-          return (
+      <section class="projects" id="projects">
+        <h2 class="text-wrapper-7">Projects</h2>
 
-            <article class="project-item" key={p._id}>
-              
-              <div class="fill-my-cup-of-faith-wrapper">
-                <div class="fill-my-cup-of-faith">
-                  <h3 class="span">{p.title}</h3>
-                  <p class="text-wrapper-6">
-                    <br />{p.description}<br /><br />
-                  </p>
-                  <p>
-                    <span class="span">Skills: </span>
-                    <span class="text-wrapper-6">
-                      {p.skills.join(', ')}
-                    </span>
-                  </p>
-                  <br />
-                  <a href={p.link} class="project-link" target="_blank">
-                    <span class="span">View Project</span>
-                  </a>
+        {
+          projects.map((p) => {
+            return (
+
+              <article class="project-item" key={p._id}>
+
+                <div class="fill-my-cup-of-faith-wrapper">
+                  <div class="fill-my-cup-of-faith">
+                    <h3 class="span">{p.title}</h3>
+                    <p class="text-wrapper-6">
+                      <br />{p.description}<br /><br />
+                    </p>
+                    <p>
+                      <span class="span">Skills: </span>
+                      <span class="text-wrapper-6">
+                        {p.skills.join(', ')}
+                      </span>
+                    </p>
+                    <br />
+                    <a href={p.link} class="project-link" target="_blank">
+                      <span class="span">View Project</span>
+                    </a>
+                  </div>
                 </div>
-              </div>
-            </article>
+              </article>
 
-          )
+            )
 
-        })  // projects.map((p) => {
-      }
-    </section>
+          })  // projects.map((p) => {
+        }
+      </section>
+    </main>
 
   )   // return 
 

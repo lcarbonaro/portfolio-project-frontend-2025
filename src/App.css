@@ -1,3 +1,11 @@
+
+article {
+  border: 2px solid #646cff;
+  border-radius: 8px;
+  padding: 1.5em;
+  margin-bottom:10px;
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
